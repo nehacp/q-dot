@@ -5,15 +5,15 @@ const CustomerBanner = (props) => {
 
   let welcomeMessage;
   let queueMessage;
-  (props.customer) ? welcomeMessage = `Welcome back, ${props.customer.name}!` : welcomeMessage = 'Welcome!';
-  (props.customer) ? queueMessage = <p className="restaurant-queued-at">You are currently queued at {props.customer.restaurant.name.toUpperCase()}</p> : queueMessage = null;
+  welcomeMessage = (props.customer) ? `Welcome back, ${props.customer.name}!` : 'Welcome!';
+  queueMessage = (props.customer) ? <p className="restaurant-queued-at">You are currently queued at {props.customer.restaurant.name.toUpperCase()}</p> : null;
 
-  let months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
-  let d = new Date();
+  const months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+  const d = new Date();
 
-  let curr_date = d.getDate();
-  let curr_month = d.getMonth();
-  let date_now = (curr_date + ' ' + months[curr_month]);
+  const currDate = d.getDate();
+  const currMonth = d.getMonth();
+  const dateNow = (currDate + ' ' + months[currMonth]);
 
   return (
     <div className="gradient-banner-container">
@@ -21,11 +21,11 @@ const CustomerBanner = (props) => {
         <p className="banner-title">{welcomeMessage}</p>
         {queueMessage}
       </div>
-     <div className="date-container">
-       <p className="date-info">Today is {date_now}</p>
+      <div className="date-container">
+        <p className="date-info">Today is {dateNow}</p>
       </div>
-    </div>
-  )
+    </div> 
+  );
 };
 
 export default CustomerBanner;
