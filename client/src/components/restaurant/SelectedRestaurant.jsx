@@ -1,7 +1,7 @@
 import React from 'react';
 import RestaurantLogoBanner from './RestaurantLogoBanner.jsx';
-import CustomerInfoForm from './CustomerInfoForm.jsx';
-import QueueInfo from './QueueInfo.jsx';
+import CustomerInfoForm from '../customer/CustomerInfoForm.jsx';
+import QueueInfo from '../customer/QueueInfo.jsx';
 import RestaurantInformation from './RestaurantInformation.jsx';
 import { Link } from 'react-router-dom';
 

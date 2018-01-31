@@ -1,8 +1,8 @@
 import React from 'react';
 import CustomerNav from './CustomerNav.jsx';
 import CustomerBanner from './CustomerBanner.jsx';
-import SelectedRestaurant from './SelectedRestaurant.jsx';
-import RestaurantCard from './RestaurantCard.jsx';
+import SelectedRestaurant from '../restaurant/SelectedRestaurant.jsx';
+import RestaurantCard from '../restaurant/RestaurantCard.jsx';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
 
