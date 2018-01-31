@@ -1,6 +1,6 @@
 import React from 'react';
-import CustomerNav from './CustomerNav.jsx';
-import CustomerBanner from './CustomerBanner.jsx';
+import CustomerNav from '../customer/CustomerNav.jsx';
+import CustomerBanner from '../customer/CustomerBanner.jsx';
 import $ from 'jquery';
 import io from 'socket.io-client';
 
